@@ -3,6 +3,32 @@ body {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 300;
 }
+
+.custom-menu {
+    z-index:1000;
+    position: absolute;
+    width: auto;
+    height: auto;
+    display: list-item;
+    text-align: center;
+    background: none;
+    list-style-type: none;
+    padding: 5px 8px;
+    margin: 0 0px;
+    color: #333;
+    text-transform: uppercase;
+    background-color: #f9f9f9;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(0,0,0,.01);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    cursor: context-menu;
+}
+.custom-menu:hover {
+    background-color: rgba(0, 0, 0, 0.52) !important;
+    color: white;
+}
+
 .menuVis {
     transform: translateY(10px);
     opacity: 0;
@@ -17,7 +43,6 @@ body {
     position: absolute;
     right: 20px;
     width: 30px;
-    /* border-radius: 2px; */
     opacity: 1;
     -webkit-transition: all .2s cubic-bezier(0.86, 0, 0.07, 1);
     transition: all .2s cubic-bezier(0.86, 0, 0.07, 1);
@@ -106,13 +131,13 @@ body {
     margin: 0 0px;
     color: #333;
     text-transform: uppercase;
-    cursor: pointer;
     background-color: #f9f9f9;
     font-size: 12px;
     position: relative;
     border-bottom: 1px solid rgba(0,0,0,.01);
     -webkit-transition: all .2s linear;
     transition: all .2s linear;
+    cursor: context-menu;
 }
 
 .s-btn:hover {
