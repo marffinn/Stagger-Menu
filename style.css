@@ -17,11 +17,13 @@ body {
     position: absolute;
     right: 20px;
     width: 30px;
+    /* border-radius: 2px; */
     opacity: 1;
     -webkit-transition: all .2s cubic-bezier(0.86, 0, 0.07, 1);
     transition: all .2s cubic-bezier(0.86, 0, 0.07, 1);
     top: 20px;
     margin-left: -15px;
+    left: 50%;
 }
 
 .menuswitch::before {
@@ -29,6 +31,7 @@ body {
     display: block;
     position: absolute;
     width: 16px;
+    border-radius: 2px;
     height: 2px;
     background-color: white;
     transform: rotate(45deg);
@@ -38,7 +41,7 @@ body {
     margin-top: -1px;
     -webkit-transition: all .2s cubic-bezier(0.86, 0, 0.07, 1);
     transition: all .2s cubic-bezier(0.86, 0, 0.07, 1);
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .menuswitch::after {
@@ -51,11 +54,12 @@ body {
     transform: rotate(45deg);
     left: 50%;
     margin-left: -1px;
+    border-radius: 2px;
     top: 50%;
     margin-top: -8px;
     -webkit-transition: all .2s cubic-bezier(0.86, 0, 0.07, 1);
     transition: all .2s cubic-bezier(0.86, 0, 0.07, 1);
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .menuswitch.plus::before,
@@ -79,12 +83,14 @@ body {
     width: 100px;
     height: auto;
     display: block;
-    position: absolute;
-    right: 0;
+    position: relative;
+    /* right: 0; */
     z-index: 400;
     padding: 0;
-    bottom: -78px;
+    bottom: -30px;
+    box-shadow: 0 1px 3px 0px #ccc;
     margin: 0;
+    /* left: 50%; */
     -webkit-transition: all .2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
     transition: all .2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
     overflow: hidden;
@@ -102,15 +108,15 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     background-color: #f9f9f9;
-    font-size: 11px;
+    font-size: 12px;
     position: relative;
+    border-bottom: 1px solid rgba(0,0,0,.01);
     -webkit-transition: all .2s linear;
     transition: all .2s linear;
-    font-weight: normal;
 }
 
 .s-btn:hover {
-    background-color: #CC0000 !important;
+    background-color: rgba(0, 0, 0, 0.52) !important;
     color: white;
 }
 
